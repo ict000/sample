@@ -183,7 +183,7 @@ h2 {
   font-weight: bold;
   color: #222;
   font-family: Poppins;
-  font-size: 36px; }
+  font-size: 30px; }
 
 .main {
   background: #f8f8f8;
@@ -200,7 +200,10 @@ body {
   color: #222;
   background: #f8f8f8;
   font-weight: 400;
-  font-family: Poppins; }
+  font-family: Poppins; 
+  height: 100vh;
+  overflow: auto; }
+
 
 .container {
   width: 900px;
@@ -252,27 +255,32 @@ body {
   -ms-transform: translate(-50%, -50%); }
 
 .signup {
-  margin-bottom: 150px; }
+  margin-top: 20px; }
 
-.signup-content {
-  padding: 75px 0; }
+
+ .signup-content{
+  display: flex;
+  margin: 0 20%;
+  padding: 75px 0;
+}
+
+ .signin-content{
+  display: flex;
+  margin: 0 20%;
+  margin-top: 20px;
+}
+
 
 .signup-form, .signup-image, .signin-form, .signin-image {
   width: 50%;
-  overflow: hidden; }
+  overflow: hidden; 
+  
+}
 
-.signup-image {
-  margin: 0 55px; }
 
 .form-title {
   margin-bottom: 33px; }
 
-.signup-image {
-  margin-top: 45px; }
-
-figure {
-  margin-bottom: 50px;
-  text-align: center; }
 
 .form-submit {
   display: inline-block;
@@ -294,11 +302,8 @@ figure {
 #signin {
   margin-top: 16px; }
 
-.signup-image-link {
-  font-size: 14px;
-  color: #222;
-  display: block;
-  text-align: center; }
+
+
 
 .term-service {
   font-size: 13px;
