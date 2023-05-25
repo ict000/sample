@@ -96,6 +96,7 @@
       padding: 0;
       color: #f3e8e8;
     }
+ 
 
     .p-4 {
       color: black;
@@ -104,9 +105,8 @@
       margin: 0;
       padding: 0;
       height: 100vh;
-      background: linear-gradient(to right, rgba(209, 209, 209, 0.788), rgb(255, 247, 247));
+      background: linear-gradient(to bottom, rgba(209, 209, 209, 0.788), rgba(24, 184, 224, 0.692));
       background-size: cover;
-      background-repeat: no-repeat;
       justify-content: center;
       align-items: center;
       font-family: Arial, sans-serif;
@@ -123,37 +123,61 @@
       
     }
     a:hover{
-      color: #1a1a1a;
+      color: #12be7c;
       display: inline;
-      font-size: larger;
+      font-size: medium;
     }
+
+
+
+    @media screen and (max-width: 768px){
+    .btn{
+      padding: 10px;
+      height: 35%;
+      display: inline;
+      margin-top: 20px;
+      position: relative;
+      
+    }
+
+    ul{
+      padding: 0 50px;
+      
+    }
+    header{
+      height: 300px;
+    }
+    
+      }
 
   </style>
 
-
   <body>
-    <header class=" mb-0 shadow-lg p-4 mb-5" style="background-color: hwb(0 99% 0%); ">
+    <div>
+      <header class=" mb-0 shadow-lg p-4 mb-5" style="background-color: hwb(0 99% 0%); ">
      
         <div class=" d-flex">
-          <a class="navbar-brand" href="#">
+          <d class="navbar-brand" href="#">
             <img src="images/house-logo.png" alt="Logo" width="40" height="40">
             <!---text in logo-->
-          </a>
+          </d>
 
 
-          <ul class="nav col-sm-9 me-lg-auto mb-2 mb-md-0 m-2">
-            <li><a href="#" class="nav-link p4-3 text-dark">Home</a></li>
+          <ul class="gear nav col-sm-9 me-lg-auto mb-2 mb-md-0 m-2">
+            <li><a href="#" class="nav-link px-3 text-dark">Home</a></li>
             <li><a href="#" class="nav-link px-3 text-dark">Features</a></li>
             <li><a href="#" class="nav-link px-3 text-dark">Pricing</a></li>
             <li><a href="#" class="nav-link px-3 text-dark">About</a></li>
           </ul>
-          <div class="d-inline">
-            <button onclick="on1()" type="button" class="btn btn-outline-dark me-2">SIGNUP</button>
-            <button onclick="on2()" type="button" class="btn btn-outline-dark">LOGIN</button>
+          <div class="btn d-inline">
+            <button onclick="on1()" type="button" class="btn btn-outline-dark me-2 ">SIGNUP</button>
+            <button onclick="on2()" type="button" class="btn btn-outline-dark px-3">LOGIN</button>
           </div>
         </div>
       
     </header>
+    </div>
+    
 
 
 
