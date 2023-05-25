@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +12,18 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .toggle-container {
+            display: inline-block;
+        }
+
+        .toggle-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -47,28 +58,36 @@
                                     statements in <a href="#" class="term-service">Terms of service</a></label>
                             </div>
                             <div class="form-group form-button">
-                                
-                                    <input  onclick="onc()" type="button" name="signup" id="signup" class="form-submit" value="Register" />
-                               
+
+                                <input onclick="onc()" type="button" name="signup" id="signup" class="form-submit"
+                                    value="Register" />
+                                <!--<input  onclick="onc()" type="button" name="signup" id="sign" class="form-submit" value="Register" />
+                                       <div class="toggle-container">
+            <label for="toggleButton" class="toggle-label">Toggle Button</label>
+            <input type="checkbox " id="toggleButton"> -->
+
                             </div>
-                        </form>
                     </div>
+                    </form>
                 </div>
             </div>
-        </section>
-                    <Script>
+    </div>
+    </section>
 
-                            function onc(){
-                                alert ('Sorry for inconvenience!');
-                            }
-                    </Script>
+    <Script>
+
+        function onc() {
+            //alert("Sorry: this page is under maintenance!");
+            window.location.href = "welcomePage.html";
+        }
+    </Script>
 
 
-        <!-- JS -->
-        <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- JS -->
+    <script></script>
         
 
 
     </div>
 </body>
-
+</html>
